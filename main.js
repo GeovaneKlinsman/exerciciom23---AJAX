@@ -20,4 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             repos.innerText = json.public_repos;
             linkElement.href = json.html_url;
         })
+        .catch(function(erro) {
+            alert("Um erro inesperado aconteceu no carregamento, tente novamente mais tarde.");
+        })
 })
